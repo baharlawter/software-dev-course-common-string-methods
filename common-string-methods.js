@@ -1,4 +1,4 @@
-/*
+/*Bahar Lawter Initial Commit 03/08/2025
 
 Practice Problem #1
 
@@ -50,6 +50,7 @@ Complete the following tasks and assign the results to the specified variables. 
   - Check if the string starts with "Welcome" using startsWith and assign the result to a variable named startsWithWelcome.
   - Check if the string ends with "today." using endsWith and assign the result to a variable named endsWithToday.
 
+
 2. Transforming
   - Convert the string to all lowercase letters using toLowerCase and assign the result to a variable named lowercaseString.
   - Convert the string to all uppercase letters using toUpperCase and assign the result to a variable named uppercaseString.
@@ -69,35 +70,43 @@ Complete the following tasks and assign the results to the specified variables. 
 let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
 // 1. Searching
-let hasJavaScript; // Your code here
-let codingPosition; // Your code here
-let startsWithWelcome; // Your code here
-let endsWithToday; // Your code here
+let hasJavaScript=inputString.includes("JavaScript");
+let codingPosition=indexOf("Coding") 
+let startsWithWelcome=inputString.trim().startsWith("Welcome"); 
+let endsWithToday=inputString.trim().endsWith("today"); 
+
 
 // 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
-let replacedString; // Your code here
+let lowercaseString=inputString.toLowerCase(); 
+let uppercaseString=inputString.toUpperCase(); re
+let trimmedString=inputString.trim();
+let replacedString=inputString.replace("JavaScript", "coding");
+
+
 
 // 3. Breaking Apart
-let wordsArray; // Your code here
+let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
+
+let wordsArray=inputString.trim().split("");
+
+
 
 // 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
+
+let firstCharacter=inputString.trim().charAt() 
+let extractedBootcamp=inputString.trim().slice(17,25);
+
 
 // Log all results
-console.log({
-  hasJavaScript,
-  codingPosition,
-  startsWithWelcome,
-  endsWithToday,
-  lowercaseString,
-  uppercaseString,
-  trimmedString,
-  replacedString,
-  wordsArray,
-  firstCharacter,
-  extractedBootcamp,
-});
+console.log(hasJavaScript);
+console.log(codingPosition);
+console.log(startsWithWelcome);
+console.log(endsWithToday);
+console.log(lowercaseString);
+console.log(uppercaseString);
+console.log(trimmedString);
+console.log(replacedString);
+console.log(wordsArray);
+console.log(firstCharacter);
+console.log(extractedBootcamp);
